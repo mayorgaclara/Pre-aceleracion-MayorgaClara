@@ -1,10 +1,10 @@
 package com.disney.disney.auth.controller;
 
-import com.alkemy.icons.icons.auth.dto.AuthenticationRequest;
-import com.alkemy.icons.icons.auth.dto.AuthenticationResponse;
-import com.alkemy.icons.icons.auth.dto.UserDTO;
-import com.alkemy.icons.icons.auth.service.JwtUtils;
-import com.alkemy.icons.icons.auth.service.UserDetailsCostumService;
+import com.disney.disney.auth.dto.AuthenticationRequest;
+import com.disney.disney.auth.dto.AuthenticationResponse;
+import com.disney.disney.auth.dto.UserDTO;
+import com.disney.disney.auth.service.JwtUtils;
+import com.disney.disney.auth.service.UserDetailsCostumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

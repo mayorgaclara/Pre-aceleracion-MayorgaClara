@@ -1,7 +1,7 @@
 package com.disney.disney.auth.filters;
 
-import com.alkemy.icons.icons.auth.service.JwtUtils;
-import com.alkemy.icons.icons.auth.service.UserDetailsCostumService;
+import com.disney.disney.auth.service.JwtUtils;
+import com.disney.disney.auth.service.UserDetailsCostumService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

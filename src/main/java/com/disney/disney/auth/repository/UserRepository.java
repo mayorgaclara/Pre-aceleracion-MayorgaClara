@@ -1,6 +1,6 @@
 package com.disney.disney.auth.repository;
 
-import com.alkemy.icons.icons.auth.entity.UserEntity;
+import com.disney.disney.auth.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

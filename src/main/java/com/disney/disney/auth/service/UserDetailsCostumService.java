@@ -1,9 +1,10 @@
 package com.disney.disney.auth.service;
 
-import com.alkemy.icons.icons.auth.dto.UserDTO;
-import com.alkemy.icons.icons.auth.entity.UserEntity;
-import com.alkemy.icons.icons.auth.repository.UserRepository;
-import com.alkemy.icons.icons.service.EmailService;
+
+import com.disney.disney.auth.dto.UserDTO;
+import com.disney.disney.auth.entity.UserEntity;
+import com.disney.disney.auth.repository.UserRepository;
+import com.disney.disney.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
