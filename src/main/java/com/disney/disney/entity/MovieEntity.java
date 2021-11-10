@@ -15,7 +15,7 @@ import java.util.List;
 @Table(name = "movie")
 @Getter
 @Setter
-@SQLDelete(sql = "UPDATE character SET deleted = true WHERE id=?")
+@SQLDelete(sql = "UPDATE charactr SET deleted = true WHERE id=? and version=?")
 @Where(clause = "deleted=false")
 public class MovieEntity {
 
@@ -35,7 +35,7 @@ public class MovieEntity {
 
     private boolean deleted = Boolean.FALSE;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
     @JoinColumn(name = "genre_id", insertable = false, updatable = false)
     private GenreEntity genre;
 
@@ -44,12 +44,12 @@ public class MovieEntity {
 
     @ManyToMany(
             cascade = {
-                    CascadeType.PERSIST,
-                    CascadeType.MERGE
+                    CascadeType.ALL,
+                    CascadeType.ALL,
             })
     @JoinTable(
             name = "character_movie",
             joinColumns = @JoinColumn(name = "movie_id"),
-            inverseJoinColumns = @JoinColumn(name = "character_id"))
+            inverseJoinColumns = @JoinColumn(name = "charactr_id"))
     private List<CharacterEntity> charactrs = new ArrayList<>();
 }

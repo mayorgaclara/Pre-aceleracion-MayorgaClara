@@ -13,7 +13,7 @@ import java.util.List;
 @Table(name = "charactr")
 @Getter
 @Setter
-@SQLDelete(sql = "UPDATE character SET deleted = true WHERE id=?")
+@SQLDelete(sql = "UPDATE charactr SET deleted = true WHERE id=? and version=?")
 @Where(clause = "deleted=false")
 public class CharacterEntity {
     @Id
@@ -26,6 +26,6 @@ public class CharacterEntity {
     private String story;
     private boolean deleted = Boolean.FALSE;
 
-    @ManyToMany(mappedBy = "charactrs", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "charactrs", cascade = CascadeType.MERGE)
     private List<MovieEntity> movies = new ArrayList<>();
 }

@@ -65,4 +65,12 @@ public class MovieMapper {
         return entities;
     }
 
+    public void movieEntityRefreshValues(MovieEntity entity, MovieDTO DTO) {
+        entity.setImagen(DTO.getImagen());
+        entity.setTitle(DTO.getTitle());
+        entity.setQualification(DTO.getQualification());
+        entity.setCreationDate(DTO.getCreationDate());
+
+    }
+
 }
