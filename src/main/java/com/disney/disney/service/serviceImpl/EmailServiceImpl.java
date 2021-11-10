@@ -36,9 +36,9 @@ public class EmailServiceImpl implements EmailService {
         Email toEmail = new Email(to);
         Content content = new Content(
                 "text/plan",
-                "Bienvenidx a Alkemy Icons"
+                "Bienvenidx a Alkemy Disney"
         );
-        String subject = "Alkemy Icons - Bienvenidx!";
+        String subject = "Alkemy Disney - Bienvenidx!";
 
         Mail mail = new Mail(fromEmail, subject, toEmail, content);
         SendGrid sg = new SendGrid(apiKey);

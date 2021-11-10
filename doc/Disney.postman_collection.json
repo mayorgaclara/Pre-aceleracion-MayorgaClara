@@ -1,0 +1,1239 @@
+{
+	"info": {
+		"_postman_id": "51ddd79b-9585-43d1-9671-3354defacc07",
+		"name": "Disney",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"mayorgaclara@gmail.com\",\r\n    \"password\": \"holahola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "auth/signup",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mayorgaclarita@gmail.com\",\r\n    \"password\": \"holahola\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:04:36 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"mayorgaclara@gmail.com\",\r\n    \"password\": \"holahola\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "auth/signin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"mayorgaclarita@gmail.com\",\r\n    \"password\": \"holahola\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:04:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"jwt\": \"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "genres",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcmFAZ21haWwuY29tIiwiZXhwIjoxNjM2NjEyNTM1LCJpYXQiOjE2MzY1NzY1MzV9.rmHnVDyn8ma_-TCdljpYFSoJrj2j0V8xbcHl9n4gExU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/genres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"genres"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "genres",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/genres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genres"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:05:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Drama\",\n        \"imagen\": \"/usr/tmp/img2.jpg\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Drama\",\n        \"imagen\": \"/usr/tmp/img1.jpg\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Drama\",\n        \"imagen\": \"/usr/tmp/img1.jpg\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "movies",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcmFAZ21haWwuY29tIiwiZXhwIjoxNjM2NjEyNTM1LCJpYXQiOjE2MzY1NzY1MzV9.rmHnVDyn8ma_-TCdljpYFSoJrj2j0V8xbcHl9n4gExU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "movies",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:06:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"imagen\": \"/usr/tmp/img1.jpg\",\n        \"title\": \"Intensamente\",\n        \"creationDate\": \"2021-10-10\",\n        \"qualification\": 8,\n        \"genreId\": 1,\n        \"charactrs\": [\n            {\n                \"id\": 7,\n                \"imagen\": \"/usr/tmp/img1.jpg\",\n                \"name\": \"Alegria\",\n                \"age\": 12,\n                \"weight\": 30,\n                \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n                \"movies\": null\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "characters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcmFAZ21haWwuY29tIiwiZXhwIjoxNjM2NjEyNTM1LCJpYXQiOjE2MzY1NzY1MzV9.rmHnVDyn8ma_-TCdljpYFSoJrj2j0V8xbcHl9n4gExU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "characters",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/characters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"characters"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:06:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 7,\n        \"imagen\": \"/usr/tmp/img1.jpg\",\n        \"name\": \"Alegria\",\n        \"age\": 12,\n        \"weight\": 30,\n        \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n        \"movies\": [\n            {\n                \"id\": 6,\n                \"imagen\": \"/usr/tmp/img1.jpg\",\n                \"title\": \"Intensamente\",\n                \"creationDate\": \"2021-10-10\",\n                \"qualification\": 8,\n                \"genreId\": 1,\n                \"charactrs\": null\n            }\n        ]\n    },\n    {\n        \"id\": 8,\n        \"imagen\": \"/usr/tmp/img1.jpg\",\n        \"name\": \"Alegria\",\n        \"age\": 12,\n        \"weight\": 30,\n        \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n        \"movies\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "genres",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcmFAZ21haWwuY29tIiwiZXhwIjoxNjM2NjEyNTM1LCJpYXQiOjE2MzY1NzY1MzV9.rmHnVDyn8ma_-TCdljpYFSoJrj2j0V8xbcHl9n4gExU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imagen\": \"/usr/tmp/img1.jpg\",\r\n    \"name\": \"Drama\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/genres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"genres"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "genres",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"imagen\": \"/usr/tmp/img1.jpg\",\r\n    \"name\": \"Drama\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/genres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genres"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:07:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 12,\n    \"name\": \"Drama\",\n    \"imagen\": \"/usr/tmp/img1.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "movies",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcmFAZ21haWwuY29tIiwiZXhwIjoxNjM2NjEyNTM1LCJpYXQiOjE2MzY1NzY1MzV9.rmHnVDyn8ma_-TCdljpYFSoJrj2j0V8xbcHl9n4gExU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"imagen\": \"/usr/tmp/img1.jpg\",\r\n    \"title\": \"Intensamente\",\r\n    \"creationDate\": \"2021-10-10\",\r\n    \"qualification\": 8,\r\n    \"genreId\": 1,\r\n    \"charactrs\": [\r\n            {\r\n            \"imagen\": \"/usr/tmp/img1.jpg\",\r\n            \"name\": \"Alegria\",\r\n            \"age\": 12,\r\n            \"weight\": 30,\r\n            \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\"\r\n            }\r\n            ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "movies",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"imagen\": \"/usr/tmp/img1.jpg\",\r\n    \"title\": \"Intensamente\",\r\n    \"creationDate\": \"2021-10-10\",\r\n    \"qualification\": 8,\r\n    \"genreId\": 1,\r\n    \"charactrs\": [\r\n            {\r\n            \"imagen\": \"/usr/tmp/img1.jpg\",\r\n            \"name\": \"Alegria\",\r\n            \"age\": 12,\r\n            \"weight\": 30,\r\n            \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\"\r\n            }\r\n            ]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movies"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:07:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 13,\n    \"imagen\": \"/usr/tmp/img1.jpg\",\n    \"title\": \"Intensamente\",\n    \"creationDate\": \"2021-10-10\",\n    \"qualification\": 8,\n    \"genreId\": 1,\n    \"charactrs\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "characters",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcmFAZ21haWwuY29tIiwiZXhwIjoxNjM2NjEyNTM1LCJpYXQiOjE2MzY1NzY1MzV9.rmHnVDyn8ma_-TCdljpYFSoJrj2j0V8xbcHl9n4gExU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imagen\": \"/usr/tmp/img1.jpg\",\r\n    \"name\": \"Alegria\",\r\n    \"age\": 12,\r\n    \"weight\": 30,\r\n    \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\r\n    \"movies\": \r\n    [ {   \"imagen\": \"/usr/tmp/img1.jpg\",\r\n        \"title\": \"Intensamente\",\r\n    \"creationDate\": \"2021-10-10\",\r\n    \"qualification\": 8,\r\n    \"genreId\": 1 }]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "characters",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"imagen\": \"/usr/tmp/img1.jpg\",\r\n    \"name\": \"Alegria\",\r\n    \"age\": 12,\r\n    \"weight\": 30,\r\n    \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\r\n    \"movies\": \r\n    [ {   \"imagen\": \"/usr/tmp/img1.jpg\",\r\n        \"title\": \"Intensamente\",\r\n    \"creationDate\": \"2021-10-10\",\r\n    \"qualification\": 8,\r\n    \"genreId\": 1 }]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/characters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"characters"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:07:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 15,\n    \"imagen\": \"/usr/tmp/img1.jpg\",\n    \"name\": \"Alegria\",\n    \"age\": 12,\n    \"weight\": 30,\n    \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n    \"movies\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "charactersById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcmFAZ21haWwuY29tIiwiZXhwIjoxNjM2NjEyNTM1LCJpYXQiOjE2MzY1NzY1MzV9.rmHnVDyn8ma_-TCdljpYFSoJrj2j0V8xbcHl9n4gExU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/characters/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"characters",
+						"7"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "charactersById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/characters/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"characters",
+								"7"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:07:42 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 7,\n    \"imagen\": \"/usr/tmp/img1.jpg\",\n    \"name\": \"Alegria\",\n    \"age\": 12,\n    \"weight\": 30,\n    \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n    \"movies\": [\n        {\n            \"id\": 6,\n            \"imagen\": \"/usr/tmp/img1.jpg\",\n            \"title\": \"Intensamente\",\n            \"creationDate\": \"2021-10-10\",\n            \"qualification\": 8,\n            \"genreId\": 1,\n            \"charactrs\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "moviesById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcmFAZ21haWwuY29tIiwiZXhwIjoxNjM2NjEyNTM1LCJpYXQiOjE2MzY1NzY1MzV9.rmHnVDyn8ma_-TCdljpYFSoJrj2j0V8xbcHl9n4gExU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/movies/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"6"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "moviesById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/movies/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movies",
+								"6"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:07:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6,\n    \"imagen\": \"/usr/tmp/img1.jpg\",\n    \"title\": \"Intensamente\",\n    \"creationDate\": \"2021-10-10\",\n    \"qualification\": 8,\n    \"genreId\": 1,\n    \"charactrs\": [\n        {\n            \"id\": 7,\n            \"imagen\": \"/usr/tmp/img1.jpg\",\n            \"name\": \"Alegria\",\n            \"age\": 12,\n            \"weight\": 30,\n            \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n            \"movies\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "genres",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcmFAZ21haWwuY29tIiwiZXhwIjoxNjM2NjEyNTM1LCJpYXQiOjE2MzY1NzY1MzV9.rmHnVDyn8ma_-TCdljpYFSoJrj2j0V8xbcHl9n4gExU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imagen\": \"/usr/tmp/img2.jpg\",\r\n    \"name\": \"Drama\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/genres/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"genres",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "genres",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"imagen\": \"/usr/tmp/img2.jpg\",\r\n    \"name\": \"Drama\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/genres/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genres",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 10 Nov 2021 21:08:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Drama\",\n    \"imagen\": \"/usr/tmp/img2.jpg\"\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,6 +1,5 @@
 package com.disney.disney.controller;
 
-import com.disney.disney.dto.CharacterDTO;
 import com.disney.disney.dto.GenreDTO;
 import com.disney.disney.service.GenreService;
 import org.springframework.beans.factory.annotation.Autowired;

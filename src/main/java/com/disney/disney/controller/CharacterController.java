@@ -16,11 +16,6 @@ public class CharacterController {
     @Autowired
     private CharacterService characterService;
 
-    @GetMapping("/{id}")
-    public ResponseEntity<CharacterDTO> getById(@PathVariable Long id){
-        return ResponseEntity.ok().body(characterService.getById(id));
-    }
-
     @GetMapping
     public ResponseEntity<List<CharacterDTO>> getAll(
             @RequestParam(value= "name", required = false) String characterName,
@@ -34,6 +29,11 @@ public class CharacterController {
         }
         List<CharacterDTO> icons = characterService.getAllCharacters();
         return ResponseEntity.ok().body(icons);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<CharacterDTO> getById(@PathVariable Long id){
+        return ResponseEntity.ok().body(characterService.getById(id));
     }
 
     @PostMapping

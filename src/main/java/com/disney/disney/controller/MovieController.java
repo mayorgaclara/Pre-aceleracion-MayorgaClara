@@ -1,6 +1,5 @@
 package com.disney.disney.controller;
 
-import com.disney.disney.dto.GenreDTO;
 import com.disney.disney.dto.MovieDTO;
 import com.disney.disney.service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,15 +17,15 @@ public class MovieController {
     @Autowired
     private MovieService movieService;
 
-    @GetMapping("/{id}")
-    public ResponseEntity<MovieDTO> getById(@PathVariable Long id){
-        return ResponseEntity.ok().body(movieService.getById(id));
-    }
-
     @GetMapping
     public ResponseEntity<List<MovieDTO>> getAll() {
         List<MovieDTO> movies = this.movieService.getAllMovies();
         return ResponseEntity.ok().body(movies);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<MovieDTO> getById(@PathVariable Long id){
+        return ResponseEntity.ok().body(movieService.getById(id));
     }
 
     @PostMapping
