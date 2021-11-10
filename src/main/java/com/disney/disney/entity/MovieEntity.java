@@ -48,8 +48,8 @@ public class MovieEntity {
                     CascadeType.MERGE
             })
     @JoinTable(
-            name = "character_pais",
+            name = "character_movie",
             joinColumns = @JoinColumn(name = "movie_id"),
             inverseJoinColumns = @JoinColumn(name = "character_id"))
-    private List<CharacterEntity> characters = new ArrayList<>();
+    private List<CharacterEntity> charactrs = new ArrayList<>();
 }

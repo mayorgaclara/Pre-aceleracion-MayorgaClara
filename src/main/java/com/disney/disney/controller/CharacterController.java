@@ -43,6 +43,12 @@ public class CharacterController {
 
     }
 
+    @PutMapping("/{id}")
+    public ResponseEntity<CharacterDTO> update(@PathVariable Long id, @RequestBody CharacterDTO genreDTO) {
+        CharacterDTO result = this.characterService.update(id, genreDTO);
+        return ResponseEntity.ok().body(result);
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete (@PathVariable Long id){
         this.characterService.delete(id);

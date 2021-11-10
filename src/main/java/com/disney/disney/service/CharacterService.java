@@ -12,6 +12,8 @@ public interface CharacterService {
 
     CharacterDTO getById(Long id);
 
+    CharacterDTO update(Long id, CharacterDTO dto);
+
     List<CharacterDTO> getCharactersByName(String name);
 
     List<CharacterDTO> getCharactersByMovie(Long movieId);

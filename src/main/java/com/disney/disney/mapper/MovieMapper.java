@@ -22,12 +22,12 @@ public class MovieMapper {
         MovieEntity movieEntity = new MovieEntity();
         movieEntity.setImagen(dto.getImagen());
         movieEntity.setTitle(dto.getTitle());
-        movieEntity.setCreationDate(dto.getCreationdate());
+        movieEntity.setCreationDate(dto.getCreationDate());
         movieEntity.setQualification(dto.getQualification());
         movieEntity.setGenreId(dto.getGenreId());
         if (loadCharacters) {
-            List<CharacterEntity> characters = this.characterMapper.characterDTOList2EntityList(dto.getCharacters());
-            movieEntity.setCharacters(characters);
+            List<CharacterEntity> charactrs = this.characterMapper.characterDTOList2EntityList(dto.getCharactrs());
+            movieEntity.setCharactrs(charactrs);
         }
         return movieEntity;
     }
@@ -37,12 +37,12 @@ public class MovieMapper {
         dto.setId(entity.getId());
         dto.setImagen(entity.getImagen());
         dto.setTitle(entity.getTitle());
-        dto.setCreationdate(entity.getCreationDate());
+        dto.setCreationDate(entity.getCreationDate());
         dto.setQualification(entity.getQualification());
         dto.setGenreId(entity.getGenreId());
         if (loadCharacters) {
-            List<CharacterDTO> characterDTOS = this.characterMapper.characterEntityList2DTOList((List<CharacterEntity>)entity.getCharacters(), false);
-            dto.setCharacters(characterDTOS);
+            List<CharacterDTO> characterDTOS = this.characterMapper.characterEntityList2DTOList((List<CharacterEntity>)entity.getCharactrs(), false);
+            dto.setCharactrs(characterDTOS);
         }
 
         return dto;

@@ -37,6 +37,7 @@ public class CharacterMapper {
         dto.setName(entity.getName());
         dto.setAge(entity.getAge());
         dto.setWeight(entity.getWeight());
+        dto.setStory(entity.getStory());
         if (loadMovies) {
             List<MovieDTO> moviesDTO = this.movieMapper.movieEntityList2DTOList(entity.getMovies(), false);
             dto.setMovies(moviesDTO);
@@ -58,5 +59,13 @@ public class CharacterMapper {
             entities.add(characterDTO2Entity(dto, false));
         }
         return entities;
+    }
+
+    public void characterEntityRefreshValues(CharacterEntity entity, CharacterDTO DTO) {
+        entity.setImagen(DTO.getImagen());
+        entity.setName(DTO.getName());
+        entity.setWeight(DTO.getWeight());
+        entity.setAge(DTO.getAge());
+        entity.setStory(DTO.getStory());
     }
 }

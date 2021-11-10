@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "character")
+@Table(name = "charactr")
 @Getter
 @Setter
 @SQLDelete(sql = "UPDATE character SET deleted = true WHERE id=?")
@@ -19,19 +19,13 @@ public class CharacterEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-
     private String imagen;
-
     private String name;
-
     private Long age;
-
     private Long weight;
-
     private String story;
-
     private boolean deleted = Boolean.FALSE;
 
-    @ManyToMany(mappedBy = "characters", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "charactrs", cascade = CascadeType.ALL)
     private List<MovieEntity> movies = new ArrayList<>();
 }

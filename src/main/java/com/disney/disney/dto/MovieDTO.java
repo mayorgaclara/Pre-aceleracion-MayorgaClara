@@ -12,8 +12,8 @@ public class MovieDTO {
     private Long id;
     private String imagen;
     private String title;
-    private LocalDate Creationdate;
+    private LocalDate creationDate;
     private Long qualification;
     private Long genreId;
-    private List<CharacterDTO> characters;
+    private List<CharacterDTO> charactrs;
 }
