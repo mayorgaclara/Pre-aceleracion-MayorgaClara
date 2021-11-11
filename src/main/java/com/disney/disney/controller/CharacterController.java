@@ -16,19 +16,15 @@ public class CharacterController {
     @Autowired
     private CharacterService characterService;
 
-    @GetMapping
-    public ResponseEntity<List<CharacterDTO>> getAll(
-            @RequestParam(value= "name", required = false) String characterName,
-            @RequestParam(value= "movie", required = false) Long characterMovie) {
-
-        if (characterName != null) {
-            return ResponseEntity.ok().body(characterService.getCharactersByName(characterName));
-        }
-        if (characterMovie != null) {
-            return ResponseEntity.ok().body(characterService.getCharactersByMovie(characterMovie));
-        }
-        List<CharacterDTO> icons = characterService.getAllCharacters();
-        return ResponseEntity.ok().body(icons);
+    @GetMapping("/filter")
+    public ResponseEntity<List<CharacterDTO>> getDetailsByFilters(
+            @RequestParam(required = false) String name,
+            @RequestParam(required = false) Long age,
+            @RequestParam(required = false) List<Long> movies,
+            @RequestParam(required = false, defaultValue = "ASC") String order
+    ) {
+        List<CharacterDTO> charactrs = this.characterService.getByFilters(name, age, movies, order);
+        return ResponseEntity.ok(charactrs);
     }
 
     @GetMapping("/{id}")

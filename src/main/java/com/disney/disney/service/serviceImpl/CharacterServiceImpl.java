@@ -1,15 +1,16 @@
 package com.disney.disney.service.serviceImpl;
 
 import com.disney.disney.dto.CharacterDTO;
+import com.disney.disney.dto.CharacterFiltersDTO;
 import com.disney.disney.entity.CharacterEntity;
 import com.disney.disney.exception.ParamNotFound;
 import com.disney.disney.mapper.CharacterMapper;
 import com.disney.disney.repository.CharacterRepository;
+import com.disney.disney.repository.specifications.CharacterSpecification;
 import com.disney.disney.service.CharacterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,9 +18,11 @@ import java.util.Optional;
 public class CharacterServiceImpl implements CharacterService {
 
     @Autowired
+    private CharacterRepository characterRepository;
+    @Autowired
     private CharacterMapper characterMapper;
     @Autowired
-    private CharacterRepository characterRepository;
+    private CharacterSpecification characterSpecification;
 
 
     public CharacterDTO save(CharacterDTO dto) {
@@ -51,27 +54,14 @@ public class CharacterServiceImpl implements CharacterService {
         return result;
     }
 
-    public List<CharacterDTO> getCharactersByName(String name) {
-        List<CharacterEntity> entities = characterRepository.findAll();
-        List<CharacterEntity> entitiesByName = new ArrayList<>();
-        for(CharacterEntity character: entities ) {
-            if (character.getName().equals(name)){
-                entitiesByName.add(character);
-            }
-        }
-        return characterMapper.characterEntityList2DTOList(entitiesByName, true);
+    @Override
+    public List<CharacterDTO> getByFilters(String name, Long age, List<Long> movies, String order) {
+        CharacterFiltersDTO characterFiltersDTO = new  CharacterFiltersDTO(name, age, movies, order);
+        List<CharacterEntity> entities = characterRepository.findAll(characterSpecification.getByFilters(characterFiltersDTO));
+        List<CharacterDTO> dtos = characterMapper.characterEntityList2DTOList(entities, true);
+        return dtos;
     }
 
-    public List<CharacterDTO> getCharactersByMovie(Long movieId) {
-        List<CharacterEntity> entities = characterRepository.findAll();
-        List<CharacterEntity> entitiesByMovie = new ArrayList<>();
-        for(CharacterEntity character: entities ) {
-            if (character.getMovies().equals(movieId)){
-                entitiesByMovie.add(character);
-            }
-        }
-        return characterMapper.characterEntityList2DTOList(entitiesByMovie, true);
-    }
 
     public void delete(Long id) {
         this.characterRepository.deleteById(id);
