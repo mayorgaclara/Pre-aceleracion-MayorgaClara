@@ -1,4 +1,3 @@
-
 {
 	"info": {
 		"_postman_id": "51ddd79b-9585-43d1-9671-3354defacc07",
@@ -252,7 +251,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -353,7 +352,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -454,7 +453,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -564,7 +563,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -683,7 +682,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -802,7 +801,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -920,7 +919,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -1037,7 +1036,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -1156,7 +1155,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYXlvcmdhY2xhcml0YUBnbWFpbC5jb20iLCJleHAiOjE2MzY2MTQyODEsImlhdCI6MTYzNjU3ODI4MX0.RfkjXiXdmq1aMPi3LtdSkuR0Ag7H22ZgnSQHZ7TvrQg",
+								"value": "",
 								"type": "text"
 							}
 						],
@@ -1233,6 +1232,233 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"id\": 1,\n    \"name\": \"Drama\",\n    \"imagen\": \"/usr/tmp/img2.jpg\"\n}"
+				}
+			]
+		},
+		{
+			"name": "charactersFilters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/characters/filter?name=alegria&age=12&order=ASC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"characters",
+						"filter"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "alegria"
+						},
+						{
+							"key": "age",
+							"value": "12"
+						},
+						{
+							"key": "order",
+							"value": "ASC"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "charactersFilters",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/characters/filter?name=alegria&age=12&order=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"characters",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "alegria"
+								},
+								{
+									"key": "age",
+									"value": "12"
+								},
+								{
+									"key": "order",
+									"value": "ASC"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Nov 2021 01:24:01 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 7,\n        \"imagen\": \"/usr/tmp/img1.jpg\",\n        \"name\": \"Alegria\",\n        \"age\": 12,\n        \"weight\": 30,\n        \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n        \"movies\": [\n            {\n                \"id\": 6,\n                \"imagen\": \"/usr/tmp/img1.jpg\",\n                \"title\": \"Intensamente\",\n                \"creationDate\": \"2021-10-10\",\n                \"qualification\": 8,\n                \"genreId\": 1,\n                \"charactrs\": null\n            }\n        ]\n    },\n    {\n        \"id\": 15,\n        \"imagen\": \"/usr/tmp/img1.jpg\",\n        \"name\": \"Alegria\",\n        \"age\": 12,\n        \"weight\": 30,\n        \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n        \"movies\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "moviesFilters",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": [
+				{
+					"name": "moviesFilters",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/movies/filter?title=intensamente&movieGenres=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movies",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "intensamente"
+								},
+								{
+									"key": "movieGenres",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 11 Nov 2021 01:35:34 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"imagen\": \"/usr/tmp/img1.jpg\",\n        \"title\": \"Intensamente\",\n        \"creationDate\": \"2021-10-10\",\n        \"qualification\": 8,\n        \"genreId\": 1,\n        \"charactrs\": [\n            {\n                \"id\": 7,\n                \"imagen\": \"/usr/tmp/img1.jpg\",\n                \"name\": \"Alegria\",\n                \"age\": 12,\n                \"weight\": 30,\n                \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n                \"movies\": null\n            }\n        ]\n    },\n    {\n        \"id\": 13,\n        \"imagen\": \"/usr/tmp/img1.jpg\",\n        \"title\": \"Intensamente\",\n        \"creationDate\": \"2021-10-10\",\n        \"qualification\": 8,\n        \"genreId\": 1,\n        \"charactrs\": [\n            {\n                \"id\": 14,\n                \"imagen\": \"/usr/tmp/img1.jpg\",\n                \"name\": \"Alegria\",\n                \"age\": 14,\n                \"weight\": 30,\n                \"story\": \"Alegría es la protagonista principal y un personaje importante de la película.\",\n                \"movies\": null\n            }\n        ]\n    }\n]"
 				}
 			]
 		}

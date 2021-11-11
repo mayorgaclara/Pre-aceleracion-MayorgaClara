@@ -12,6 +12,8 @@ public interface MovieService {
 
     List<MovieDTO> getAllMovies();
 
+    List<MovieDTO> getByFilters(String name, List<Long> genre, String order);
+
     MovieDTO update(Long id, MovieDTO dto);
 
     void delete(Long id);

@@ -20,6 +20,10 @@ characters that compose it, and to understand in which films they have participa
 
 > EMAIL_API_KEY=key
 
+## Additional documents
+
+Inside the root of the API is added the folder - "DOC", where the endpoints are documented using the Postman tool. In addition, a screenshot of the welcome email received at the time of the Sign Up is attached.
+
 
 
 

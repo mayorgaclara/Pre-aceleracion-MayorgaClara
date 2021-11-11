@@ -23,10 +23,21 @@ public class MovieController {
         return ResponseEntity.ok().body(movies);
     }
 
+    @GetMapping("/filter")
+    public ResponseEntity<List<MovieDTO>> getDetailsByFilters(
+            @RequestParam(required = false) String title,
+            @RequestParam(required = false) List<Long> genre,
+            @RequestParam(required = false, defaultValue = "ASC") String order
+    ){
+        List<MovieDTO> filteredMovies = movieService.getByFilters(title, genre, order);
+        return ResponseEntity.status(HttpStatus.OK).body(filteredMovies);
+    }
+
     @GetMapping("/{id}")
     public ResponseEntity<MovieDTO> getById(@PathVariable Long id){
         return ResponseEntity.ok().body(movieService.getById(id));
     }
+
 
     @PostMapping
     public ResponseEntity<MovieDTO> save(@RequestBody MovieDTO movie) {
